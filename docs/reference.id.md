@@ -521,4 +521,4 @@ Suite headless dijalankan dengan `luajit` dan binding `mimgui` palsu:
 
 `luacheck --std lua51 dist/lib/nimgui/*.lua tests/fake_nimgui.lua tests/test_nimgui_*.lua tests/test_color.lua tests/test_motion.lua` melaporkan 0 error dan 83 warning yang sudah diketahui, sebagian besar berupa argumen `self` yang tidak dipakai di `state.lua` dan global host yang dipakai binding palsu di test.
 
-Belum diverifikasi: rendering dan interaksi Android, DPI `1 / 1.5 / 2`, target sentuh nyata, layar kecil, batas raster/VRAM, FPS dengan playback GIF, serta reload/pause/terminate. Semuanya tetap `static review only` atau `not verified`.
+Rendering dan interaksi sentuh Android sudah dicoba lewat MonetLoader di perangkat. Suite tetap tidak mencakup DPI `1 / 1.5 / 2`, ekstrem ukuran layar, batas raster/VRAM, FPS dengan playback GIF, atau reload/pause/terminate; anggap semua itu `static review only` sampai diukur.

@@ -16,7 +16,7 @@ Library ini tidak mengubah `mimgui`, Dear ImGui, atau kode native loader. Reposi
 
 Versi `0.1.0`. Suite headless lulus dengan 454 checks dan 0 failures (432 `nimgui`, 14 `color`, 8 `motion`).
 
-Tampilan **belum** diverifikasi di perangkat Android. DPI, target sentuh nyata, VRAM, dan FPS belum diuji. Repository ini tidak punya workflow CI dan belum punya artefak rilis; jalankan test secara lokal.
+Antarmuka sudah diuji di perangkat Android lewat MonetLoader. Tidak ada pengukuran FPS atau VRAM yang dipublikasikan. Repository ini tidak punya workflow CI dan belum punya artefak rilis; jalankan test secara lokal.
 
 ## Fitur utama
 
@@ -37,7 +37,7 @@ Tampilan **belum** diverifikasi di perangkat Android. DPI, target sentuh nyata, 
 | mimgui | 2.0.1 | Disertakan MonetLoader; tidak ada di repository ini |
 | Dear ImGui | 1.72 | `IMGUI_VERSION_NUM 17200`; tidak ada `BeginTable` atau `BeginDisabled` |
 | Lua | LuaJIT, sintaks Lua 5.1 | Memakai FFI LuaJIT; Lua 5.1 biasa bukan target |
-| Android | - | UI untuk sentuh; perilaku device belum diverifikasi |
+| Android | - | UI untuk sentuh; sudah diuji di device lewat MonetLoader |
 
 Tidak ada build step dan tidak ada dependensi Lua eksternal selain `mimgui`.
 

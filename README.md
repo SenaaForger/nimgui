@@ -16,7 +16,7 @@ The library does not modify `mimgui`, Dear ImGui, or native loader code. This re
 
 Version `0.1.0`. The headless suite passes with 454 checks and 0 failures (432 `nimgui`, 14 `color`, 8 `motion`).
 
-The interface has **not** been verified on an Android device. DPI, real touch targets, VRAM, and FPS remain untested. This repository has no CI workflow and no release artifacts; run the tests locally.
+The interface has been tested on an Android device through MonetLoader. No FPS or VRAM measurements are published. This repository has no CI workflow and no release artifacts; run the tests locally.
 
 ## Key features
 
@@ -37,7 +37,7 @@ The interface has **not** been verified on an Android device. DPI, real touch ta
 | mimgui | 2.0.1 | Included with MonetLoader; not in this repository |
 | Dear ImGui | 1.72 | `IMGUI_VERSION_NUM 17200`; no `BeginTable` or `BeginDisabled` |
 | Lua | LuaJIT, Lua 5.1 syntax | Uses the LuaJIT FFI; plain Lua 5.1 is not a target |
-| Android | - | Touch-first UI; device behavior is unverified |
+| Android | - | Touch-first UI; tested on a device through MonetLoader |
 
 There is no build step and no external Lua dependency beyond `mimgui`.
 

@@ -521,4 +521,4 @@ The headless suites run with `luajit` and the fake `mimgui` binding:
 
 `luacheck --std lua51 dist/lib/nimgui/*.lua tests/fake_nimgui.lua tests/test_nimgui_*.lua tests/test_color.lua tests/test_motion.lua` reports 0 errors and 83 known warnings, mostly unused `self` arguments in `state.lua` and host globals used by the fake binding in the tests.
 
-Not verified: Android rendering and interaction, DPI `1 / 1.5 / 2`, real touch targets, small screens, raster/VRAM limits, FPS with GIF playback, and reload/pause/terminate. Those remain `static review only` or `not verified`.
+Android rendering and touch interaction were exercised in a device test through MonetLoader. The suites still do not cover DPI `1 / 1.5 / 2`, screen-size extremes, raster/VRAM limits, FPS with GIF playback, or reload/pause/terminate; treat those as `static review only` until measured.
